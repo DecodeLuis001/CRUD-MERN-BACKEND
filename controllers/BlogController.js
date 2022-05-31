@@ -8,10 +8,6 @@ export const getAllBlogs = async(req, res)=>{
     try{
         const blogs = await BlogModel.find()
         res.status(200).json(blogs)
-        res.json({
-            estado: true,
-            mensaje: 'Funcionando!!!'
-        })
     } catch(error){
         res.json({message: error.message})
     }
