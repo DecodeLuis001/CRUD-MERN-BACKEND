@@ -12,7 +12,8 @@ const db = new Sequelize('database_app', 'root', 'root', {
 export default db*/
 
 import mongoose from 'mongoose'
-const url = 'mongodb://localhost:27017/MERN1'
+import 'dotenv/config'
+const url = `mongodb+srv://${process.env.USERNAMEM}:${process.env.PASSWORD}@cluster0.zpjsu.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`
 mongoose.connect(url)
 
 const db = mongoose.connection

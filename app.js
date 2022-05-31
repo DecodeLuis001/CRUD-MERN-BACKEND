@@ -5,6 +5,8 @@ import db from "./database/db.js"
 //se importa el enrutador.
 import blogRoutes from './routes/routes.js'
 
+import 'dotenv/config'
+
 const app = express()
 
 app.use(cors())
@@ -25,7 +27,9 @@ app.get('/', (req, res)=>{
     res.send('Hola mundo')
 })*/
 
+const PUERTO = process.env.PORT || 3005
+
 app.listen(8000, ()=>{
-    console.log('Servidor corriendo en: http://localhost:8000/')
+    console.log(`Servidor Trabajando en el puerto: ${PUERTO}`)
 })
 
