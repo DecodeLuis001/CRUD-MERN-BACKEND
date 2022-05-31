@@ -29,7 +29,7 @@ app.get('/', (req, res)=>{
 
 const PUERTO = process.env.PORT || 3005
 
-app.listen(8000, ()=>{
+app.listen(PUERTO, ()=>{
     console.log(`Servidor Trabajando en el puerto: ${PUERTO}`)
 })
 
