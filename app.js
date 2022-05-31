@@ -26,6 +26,13 @@ try{
 app.get('/', (req, res)=>{
     res.send('Hola mundo')
 })*/
+app.get('/', (req, res) =>{
+
+    res.json({
+      estado: true,
+      mensaje: 'Funcionando!!!'
+    })
+})
 
 const PUERTO = process.env.PORT || 3005
 
