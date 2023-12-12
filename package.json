@@ -19,6 +19,6 @@
     "dotenv": "^16.0.0",
     "mongoose": "^6.11.3",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.19.2"
+    "sequelize": "^6.29.0"
   }
 }
